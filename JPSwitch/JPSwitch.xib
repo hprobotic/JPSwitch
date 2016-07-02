@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JPSwitch" customModule="JPSwitch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQB-Rx-4Zy" userLabel="swBar">
+                    <rect key="frame" x="12" y="27" width="55" height="16"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-UY-N2F" userLabel="swBarChildLine">
+                            <rect key="frame" x="10" y="7" width="35" height="3"/>
+                            <color key="backgroundColor" red="0.24705882352941178" green="0.76862745098039209" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="Xd5-89-P7o"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.396078431372549" green="0.84705882352941175" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Btc-UY-N2F" firstAttribute="leading" secondItem="aQB-Rx-4Zy" secondAttribute="leading" constant="10" id="7Uc-NS-RYe"/>
+                        <constraint firstItem="Btc-UY-N2F" firstAttribute="centerY" secondItem="aQB-Rx-4Zy" secondAttribute="centerY" id="eNS-DI-NJe"/>
+                        <constraint firstAttribute="height" constant="16" id="tyr-Xj-Ex8"/>
+                        <constraint firstAttribute="trailing" secondItem="Btc-UY-N2F" secondAttribute="trailing" constant="10" id="xLF-mp-5r5"/>
+                        <constraint firstAttribute="width" constant="50" id="ydf-Vm-2e6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ydf-Vm-2e6"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adE-4c-7aN">
+                    <rect key="frame" x="10" y="23" width="23" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="1aJ-lQ-wAI"/>
+                        <constraint firstAttribute="height" constant="23" id="toS-I5-86c"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.49411764705882355" green="0.52549019607843139" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="JPSwitchButtonDidTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="75T-wD-gft"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aQB-Rx-4Zy" secondAttribute="trailing" constant="12" id="A4w-I6-dm5"/>
+                <constraint firstItem="aQB-Rx-4Zy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="PvF-k8-6bv"/>
+                <constraint firstItem="aQB-Rx-4Zy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TNy-ra-ga7"/>
+                <constraint firstItem="adE-4c-7aN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="bvK-cz-4br"/>
+                <constraint firstItem="adE-4c-7aN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nh3-Bi-iG9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="adE-4c-7aN" id="xUY-Tg-v7D"/>
+                <outlet property="leftSpace" destination="bvK-cz-4br" id="8CB-B2-tsQ"/>
+                <outlet property="swBarChildLineView" destination="Btc-UY-N2F" id="kqQ-4D-XIU"/>
+                <outlet property="swBarView" destination="aQB-Rx-4Zy" id="evk-cJ-hq4"/>
+            </connections>
+            <point key="canvasLocation" x="246.5" y="431.5"/>
+        </view>
+    </objects>
+</document>
