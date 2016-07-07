@@ -71,7 +71,7 @@ class JPSwitch: UIView {
             rotateAnimation.fromValue = 0.0
             rotateAnimation.toValue = CGFloat(M_PI)
             rotateAnimation.duration = 0.5
-            rotateAnimation.cumulative = false;
+            rotateAnimation.cumulative = false
             
             UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                 self.swBarView.backgroundColor = UIColor(red:0.40, green:0.85, blue:0.56, alpha:1.0)
@@ -89,7 +89,7 @@ class JPSwitch: UIView {
             rotateAnimation.fromValue = CGFloat(M_PI)
             rotateAnimation.toValue = 0.0
             rotateAnimation.duration = 0.5
-            rotateAnimation.cumulative = false;
+            rotateAnimation.cumulative = false
             
             // Translation animation
             UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
